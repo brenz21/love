@@ -1,0 +1,104 @@
+body{
+    background: #df83cd;
+    margin: 0;
+    padding: 0;
+}
+
+.heart{
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    background: #e27bb1;
+    transition: 1s;
+    transform-origin: right bottom;
+}
+
+.heart:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: 2s;
+    transform-origin: right bottom;
+}
+
+.heart:hover{
+    transform: rotate(45deg);
+    border-top-left-radius: 50px;
+    
+    border-bottom-left-radius: 50px;
+}
+
+.heart:hover:before{
+    transform: rotate(450deg) translateY(100px); 
+    border-top-left-radius: 50px;
+    background: #e2619f;  
+    border-bottom-left-radius: 50px;
+
+}
+ 
+body{
+
+}
+
+div {
+    color: white;
+    position: absolute;
+    left: 43%;
+    top: 50%;
+
+}
+.fade-in-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    animation: fadein 5s;
+    -webkit-animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    -o-animation: fadein 5s;
+    
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+    
+@-moz-keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-o-keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadein{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media (max-width: 1000px){
+    .heart {
+        position: absolute;
+        left: 0%;
+        width: 180px;
+        top: 30%;
+    }
+    .fade-in-text {
+        left: 25%;
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+
+    }
+    .heart:hover {
+
+    }
+    .heart:hover:before {
+
+    }
+}
